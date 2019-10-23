@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- admin custom CSS -->
+    <link rel="stylesheet" href="css/admin_custom.css" />
+
+    <title>어드민 템플릿-테이블</title>
+</head>
+<body>
+    <!-- //mark : 컨테이너 -->
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                로그인
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index_join.html">
+                                회원가입
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index_tabletype.html">
+                                게시판
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index_btn.html">
+                                버튼
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index_tab.html">
+                                탭메뉴
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index_table.html">
+                                table
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>    
+        
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+
+            <h1>table</h1>
+          
+            <p><strong>기본 ('table')</strong></p>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">번호</th>
+                  <th scope="col">구분</th>
+                  <th scope="col">제목</th>
+                  <th scope="col">등록일</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>분류1</td>
+                  <td>기본 테이블</td>
+                  <td>2019-10-21</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <p><strong>border table ('table table-bordered')</strong></p>
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th scope="col">번호</th>
+                  <th scope="col">구분</th>
+                  <th scope="col">제목</th>
+                  <th scope="col">등록일</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>분류1</td>
+                  <td>테두리 있는 테이블</td>
+                  <td>2019-10-21</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <p><strong>thead 스타일 ('table thead-dark')</strong></p>
+            <table class="table">
+              <thead class="thead-dark">
+                <tr>
+                  <th scope="col">번호</th>
+                  <th scope="col">구분</th>
+                  <th scope="col">제목</th>
+                  <th scope="col">등록일</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>분류1</td>
+                  <td>thead-dark</td>
+                  <td>2019-10-21</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <p><strong>thead 스타일 ('table thead-light')</strong></p>
+            <table class="table">
+              <thead class="thead-light">
+                <tr>
+                  <th scope="col">번호</th>
+                  <th scope="col">구분</th>
+                  <th scope="col">제목</th>
+                  <th scope="col">등록일</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>분류1</td>
+                  <td>thead-light</td>
+                  <td>2019-10-21</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <p><strong>컬러별 스타일 tr, td 적용('table-*')</strong></p>
+            <table class="table">
+              <thead>
+                <tr>
+                  <td>table</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="table-active">
+                  <td>table-active</td>
+                </tr>
+                <tr class="table-primary">
+                  <td>table-primary</td>
+                </tr>
+                <tr class="table-secondary">
+                  <td>table-secondary</td>
+                </tr>
+                <tr class="table-success">
+                  <td>table-success</td>
+                </tr>
+                <tr class="table-danger">
+                  <td>table-danger</td>
+                </tr>
+                <tr class="table-warning">
+                  <td>table-warning</td>
+                </tr>
+                <tr class="table-info">
+                  <td>table-info</td>
+                </tr>
+                <tr class="table-light">
+                    <td>table-light</td>
+                </tr>
+                <tr class="table-dark">
+                  <td>table-dark</td>
+                </tr>
+              </tbody>
+            </table>
+            
+            <table class="table table-bordered">
+              <colgroup>
+                <col width="200px">
+                <col width="500px">
+                <col width="200px">
+                <col width="500px">
+                <col width="200px">
+                <col width="500px">
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th>상태</th>
+                  <td>
+                    <select class="form-control">
+                      <option>정상</option>
+                      <option>비정상</option>
+                    </select>  
+                  </td>
+                  <th>카테고리</th>
+                  <td>
+                    <select class="form-control">
+                      <option>전체</option>
+                      <option>카테고리1</option>
+                      <option>카테고리2</option>
+                    </select>
+                  </td>
+                  <th>기관</th>
+                  <td>
+                    <select class="form-control">
+                      <option>전체</option>
+                      <option>카테고리1</option>
+                      <option>카테고리2</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th>검색 입력</th>
+                  <td colspan="5">
+                    <div class="form-inline">
+                      <select class="form-control col-2 mr-2">
+                        <option>전체</option>
+                        <option>카테고리1</option>
+                        <option>카테고리2</option>
+                      </select>
+                      <input class="form-control col" type="search" placeholder="직접 입력 삭제 버튼 나옴" aria-label="Search">
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            
+            <table class="table table-bordered">
+              <colgroup>
+                <col width="200px">
+                <col width="500px">
+                <col width="200px">
+                <col width="500px">
+              </colgroup>
+              <thead>
+                <tr class="table-active">
+                  <th colspan="4">기본정보</th>
+                </tr>
+              </thead> 
+              <tbody>
+                <tr>
+                  <th>상태</th>
+                  <td>정상</td>
+                  <th>카테고리</th>
+                  <td>
+                    <select class="form-control">
+                      <option>전체</option>
+                      <option>카테고리1</option>
+                      <option>카테고리2</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th>이름</th>
+                  <td>
+                    <div class="form-inline">
+                        <input type="text" class="form-control col mr-1" placeholder="성">
+                        <input type="text" class="form-control col" placeholder="이름">
+                    </div>
+                  </td>
+                  <th>이메일 입력</th>
+                  <td>
+                    <div class="form-inline">
+                      <input type="text" class="form-control col mr-2" placeholder="직접입력">
+                      <span>@naver.com</span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                    <th>상태</th>
+                    <td>
+                      <select class="form-control">
+                          <option>전체</option>
+                          <option>카테고리1</option>
+                          <option>카테고리2</option>
+                        </select>
+                    </td>
+                    <th>카테고리</th>
+                    <td>
+                      <select class="form-control">
+                        <option>전체</option>
+                        <option>카테고리1</option>
+                        <option>카테고리2</option>
+                      </select>
+                    </td>
+                  </tr>
+              </tbody>
+            </table>
+
+            <table class="table table-bordered">
+              <colgroup>
+                <col width="215px">
+                <col width="">
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th>주소</th>
+                  <td>
+                    <div class="form-inline">
+                      <input class="form-control form-control col mr-2" type="text" placeholder="주소입력">
+                      <button type="submit" class="btn btn-success">주소 검색</button>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <table class="table table-bordered">
+              <colgroup>
+                <col width="215px">
+                <col width="">
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th>파일 등록</th>
+                  <td>
+                    <div class="input-group">
+                      <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+                        <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+               모달모달모달
+            </button>
+            <!--모달 html-->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    내용
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+        </main>
+
+        
+    </div>
+    <!-- end 컨테이너 -->
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- admin custom JS -->
+    <script src="js/admin_custom.js"></script>
+
+    <script>
+      //모달 제이쿼리
+      $('#myModal').on('shown.bs.modal', function () {
+      $('#myInput').trigger('focus')
+      })
+    </script>
+    
+</body>
+
+</html>

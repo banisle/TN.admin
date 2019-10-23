@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- admin custom CSS -->
+    <link rel="stylesheet" href="css/admin_custom.css" />
+
+    <title>어드민 템플릿-버튼</title>
+</head>
+<body>
+    <!-- //mark : 컨테이너 -->
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                로그인
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index_join.html">
+                                회원가입
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index_tabletype.html">
+                                게시판
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index_btn.html">
+                                버튼
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index_tab.html">
+                                탭메뉴
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index_table.html">
+                                table
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>    
+        
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+
+            <h1>버튼</h1>
+            <p><strong>기본버튼 ('btn btn-')</strong></p>
+
+            <p><strong>기본 버튼</strong></p>
+            <div>
+                <button type="button" class="btn btn-primary">btn-primary</button>
+            </div>
+            <hr>
+
+            <p><strong>스타일 버튼</strong></p>
+            <p>
+                <button type="button" class="btn btn-secondary">btn-Secondary</button>
+                <button type="button" class="btn btn-success">btn-Success</button>
+                <button type="button" class="btn btn-danger">btn-Danger</button>
+                <button type="button" class="btn btn-warning">btn-Warning</button>
+                <button type="button" class="btn btn-info">btn-Info</button>
+                <button type="button" class="btn btn-light">btn-Light</button>
+                <button type="button" class="btn btn-dark">btn-Dark</button>
+                <button type="button" class="btn btn-link">btn-Link</button>  
+            </p>
+            <p>
+                <button type="button" class="btn btn-outline-primary">btn-outline-Primary</button>
+                <button type="button" class="btn btn-outline-secondary">btn-outline-Secondary</button>
+                <button type="button" class="btn btn-outline-success">btn-outline-Success</button>
+                <button type="button" class="btn btn-outline-danger">btn-outline-Danger</button>
+                <button type="button" class="btn btn-outline-warning">btn-outline-Warning</button>
+                <button type="button" class="btn btn-outline-info">btn-outline-Info</button>
+                <button type="button" class="btn btn-outline-light">btn-outline-Light</button>
+                <button type="button" class="btn btn-outline-dark">btn-outline-Dark</button>
+            </p>
+            <hr>
+
+            <p><strong>a, input 타입 버튼</strong></p>
+            <div>
+                <a class="btn btn-primary" href="#" role="button">Link</a>
+                <button class="btn btn-primary" type="submit">Button</button>
+                <input class="btn btn-primary" type="button" value="Input">
+                <input class="btn btn-primary" type="submit" value="Submit">
+            </div>  
+            <hr> 
+
+            <p><strong>활성 상태</strong></p>
+            <div>
+                <button type="button" class="btn btn-secondary" disabled>button disabled</button>
+                <a href="#" class="btn btn-primary active" role="button" aria-pressed="true">link active</a>
+                <a href="#" class="btn btn-secondary disabled" role="button" aria-pressed="true">link disabled</a>
+            </div>
+            <hr>
+
+            <p><strong>크기별 버튼</strong></p>
+            <div>
+                <p>
+                    <button type="button" class="btn btn-primary btn-lg">btn-lg</button>
+                    <button type="button" class="btn btn-secondary btn-lg">btn-lg</button>
+                </p>
+                <p>        
+                    <button type="button" class="btn btn-primary btn-sm">btn-sm</button>
+                    <button type="button" class="btn btn-secondary btn-sm">btn-sm</button>
+                </p>          
+                <p>
+                    <button type="button" class="btn btn-primary btn-lg btn-block">btn-block</button>
+                    <button type="button" class="btn btn-secondary btn-lg btn-block">btn-block</button>
+                </p>
+            </div>
+            <hr>
+
+            <h4>버튼 정렬</h4>
+            <p><strong>양쪽 정렬</strong></p>
+            <div class="row">
+                <div class="col-6 text-left">
+                    <button type="button" class="btn btn-primary btn-lg">button</button>
+                </div>
+                <div class="col-6 text-right">
+                    <button type="button" class="btn btn-primary btn-lg">button</button>
+                </div>
+            </div>
+            <p><strong>오른쪽 정렬</strong></p>
+            <div class="row">
+               <div class="col-12 text-right">
+                    <div>   
+                        <button type="button" class="btn btn-primary btn-lg">button</button>
+                        <button type="button" class="btn btn-primary btn-lg">button</button>
+                    </div>
+                </div>
+            </div>
+            <p><strong>왼쪽 정렬</strong></p>
+            <div class="row">
+                <div class="col-12 text-left">
+                   <div>
+                        <button type="button" class="btn btn-primary btn-lg">button</button>
+                        <button type="button" class="btn btn-primary btn-lg">button</button>
+                    </div>
+                </div>
+            </div>
+            <p><strong>가운데 정렬</strong></p>
+            <div class="row">
+                <div class="col-12 text-center">
+                   <div>
+                        <button type="button" class="btn btn-primary btn-lg">button</button>
+                        <button type="button" class="btn btn-primary btn-lg">button</button>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            
+            <p><strong>tab 버튼</strong></p>
+            <div class="btn btn-group" role="group" aria-label="Basic example">
+              <button type="button" class="btn btn-secondary">메뉴1</button>
+              <button type="button" class="btn btn-secondary">메뉴2</button>
+              <button type="button" class="btn btn-secondary">메뉴3</button>
+            </div>
+
+            <p><strong>라디오 버튼 툴바</strong></p>
+            <div class="btn btn-group-toggle" data-toggle="buttons">
+                <label class="btn btn-primary active">
+                    <input type="radio" name="options" id="option1" autocomplete="off" checked> Active
+                </label>
+                <label class="btn btn-primary">
+                    <input type="radio" name="options" id="option2" autocomplete="off"> Radio
+                </label>
+                <label class="btn btn-primary">
+                    <input type="radio" name="options" id="option3" autocomplete="off"> Radio
+                </label>
+            </div>
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                <label class="btn btn-primary active">
+                    <input type="radio" name="options" id="option" autocomplete="off" checked> Active
+                </label>
+                <label class="btn btn-primary">
+                    <input type="radio" name="options" id="option" autocomplete="off"> Radio
+                </label>
+                <label class="btn btn-primary">
+                    <input type="radio" name="options" id="option" autocomplete="off"> Radio
+                </label>
+            </div>
+            <hr>
+            
+            <p><strong>폼 내부 버튼</strong></p>
+            <div class="col-6 input-group">
+                <input type="text" class="form-control mr-2" placeholder="cs코멘트 입력" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="button" id="button-addon2">입력</button>
+                </div>
+            </div>
+            <hr>
+            
+            <p><strong>파일 첨부</strong></p>
+            <div class="col-6 input-group">
+                <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04">
+                    <label class="custom-file-label" for="inputGroupFile04">Choose file</label>
+                </div>
+            </div>
+            
+
+   
+        </main>
+        
+    </div>
+    <!-- end 컨테이너 -->
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- admin custom JS -->
+    <script src="js/admin_custom.js"></script>
+    <script>
+    </script>
+</body>
+
+</html>

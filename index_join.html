@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- admin custom CSS -->
+    <link rel="stylesheet" href="css/admin_custom.css" />
+    <!-- 데이트피커-->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <style>
+        .datepick input.form-control{
+            width: 45%;
+        }
+    </style>
+    <title>어드민 템플릿-회원가입</title>
+</head>
+<body>
+    <!-- //mark : 컨테이너 -->
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                로그인
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index_join.html">
+                                회원가입
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index_tabletype.html">
+                                게시판
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index_btn.html">
+                                버튼
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index_tab.html">
+                                탭메뉴
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index_table.html">
+                                table
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>    
+        
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+
+            <h1 class="mb-5">회원가입</h1>
+            
+            <div class="col-7">
+                <h6><strong>기본정보</strong></h6>
+                
+                <div class="form-group mt-4">
+                    <label for="id">아이디(이메일)</label>
+                    <div class="form-inline">
+                        <input type="text" class="form-control col-10 mr-2" id="id" placeholder="이메일 형식 입력">
+                        <button type="submit" class="btn btn-dark col">중복확인</button>
+                    </div>
+                    <small id="idlHelp" class="form-text text-muted">이메일 형식에 맞게 입력</small>    
+                </div>
+                <div class="form-group">
+                    <label for="password">비밀번호</label>
+                    <input type="password" class="form-control" id="password" placeholder="">
+                    <small id="passwordHelp" class="form-text text-muted">8~14자 이내 영문, 숫자 및 특수문자(!@#$%^&+=) 혼합으로 입력</small>
+                    <input type="password" class="form-control mt-3" placeholder="">
+                    <small id="passwordHelp" class="form-text text-muted">비밀번호 재확인</small>     
+                </div>
+                <div class="form-group">
+                    <label for="name">이름</label>
+                    <div class="form-inline">
+                        <input type="text" class="form-control col mr-2" id="name" placeholder="성">
+                        <input type="text" class="form-control col" placeholder="이름">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="phonenumber">휴대전화번호</label>
+                    <div class="form-inline">
+                        <select class="form-control col-3 mr-2">
+                            <option>선택</option>
+                            <option>010</option>
+                            <option>011</option>
+                        </select>
+                        <input type="text" class="form-control col mr-2" placeholder="">
+                        <input type="text" class="form-control col" placeholder="">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email">본인확인 수신 이메일</label>
+                    <div class="form-inline">
+                        <input type="email" class="form-control col-10 mr-2" id="email" placeholder="이메일 입력">
+                        <button type="submit" class="btn btn-dark col">인증메일받기</button>
+                    </div>
+                    <small id="emaillHelp" class="form-text text-muted">입력한 이메일 주소로 인증번호를 받을 수 있습니다.</small>
+                    <input type="text" class="form-control mt-3" placeholder="인증번호 입력">
+                    <small id="emaillHelp" class="form-text text-muted">※ 본인확인 수신 이메일 정보는 계정분실 시 계정정보 찾기에도 
+                    필요하오니 주로 사용하는 이메일을 입력해주세요.</small>    
+                </div>
+                <div class="form-group">
+                    <label for="address">주소</label>
+                    <div class="form-inline">
+                        <input type="text" class="form-control col-10 mr-2" id="address" placeholder="주소 입력">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-dark col" data-toggle="modal" data-target="#exampleModalScrollable">주소 검색</button>
+                    </div>    
+                </div>
+                <!-- Modal 내용-->
+                <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalScrollableTitle">우편번호</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div style="height: 100px;">
+                                <p>이건 안냐려가능가??</p>
+                            </div>
+                            <div class="modal-body" style="height: 300px;">
+                                <h1>스크롤부부부부부분</h1>
+                                <h1>스크롤부부부부부분</h1>
+                                <h1>스크롤부부부부부분</h1>
+                                <h1>스크롤부부부부부분</h1>
+                                <h1>스크롤부부부부부분</h1>
+                                <h1>스크롤부부부부부분</h1>
+                                <h1>스크롤부부부부부분</h1>
+                                <h1>스크롤부부부부부분</h1>
+                                <h1>스크롤부부부부부분</h1>
+                            </div>
+                            <div style="height: 100px;">
+                                <p>이건 안냐려가능가??</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+                                <button type="button" class="btn btn-primary">확인</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group text-center">
+                    <button type="button" class="btn btn-secondary btn-lg">취소</button>
+                    <button type="button" class="btn btn-primary btn-lg">가입하기</button>
+                </div>
+                
+            
+            
+            </div>
+            
+            
+
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+        </main>
+
+        
+    </div>
+    <!-- end 컨테이너 -->
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- 데이트피커 -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!-- admin custom JS -->
+    <script src="js/admin_custom.js"></script>
+
+    <script>
+      //모달 제이쿼리
+      $('#myModal').on('shown.bs.modal', function () {
+      $('#myInput').trigger('focus')
+      });
+    
+    $(function() {
+        $.datepicker.setDefaults({
+            dateFormat: 'yy-mm-dd'
+            ,showMonthAfterYear:true //년 월
+            ,yearSuffix: "년" //달력의 년도 부분 뒤에 붙는 텍스트
+            ,monthNamesShort: ['1','2','3','4','5','6','7','8','9','10','11','12'] //달력의 월 부분 텍스트
+            ,monthNames: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','12월'] //달력의 월 부분 Tooltip 텍스트
+            ,dayNamesMin: ['일','월','화','수','목','금','토'] //달력의 요일 부분 텍스트
+            ,dayNames: ['일요일','월요일','화요일','수요일','목요일','금요일','토요일'] //달력의 요일 부분 Tooltip 텍스트
+        });
+        $( ".datepick input" ).datepicker();
+    });
+
+   
+    </script>
+    
+</body>
+
+</html>
