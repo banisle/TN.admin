@@ -189,12 +189,12 @@
             
             <table class="table table-bordered">
               <colgroup>
-                <col width="200px">
-                <col width="500px">
-                <col width="200px">
-                <col width="500px">
-                <col width="200px">
-                <col width="500px">
+                <col width="10%">
+                <col width="*">
+                <col width="10%">
+                <col width="*">
+                <col width="10%">
+                <col width="*">
               </colgroup>
               <tbody>
                 <tr>
@@ -240,10 +240,10 @@
             
             <table class="table table-bordered">
               <colgroup>
-                <col width="200px">
-                <col width="500px">
-                <col width="200px">
-                <col width="500px">
+                <col width="10%">
+                <col width="40%">
+                <col width="10%">
+                <col width="40%">
               </colgroup>
               <thead>
                 <tr class="table-active">
@@ -266,15 +266,21 @@
                 <tr>
                   <th>이름</th>
                   <td>
-                    <div class="form-inline">
-                        <input type="text" class="form-control col mr-1" placeholder="성">
-                        <input type="text" class="form-control col" placeholder="이름">
+                    <div class="form-row">
+                      <div class="col">
+                        <input type="text" class="form-control" placeholder="성">
+                      </div>
+                      <div class="col">
+                        <input type="text" class="form-control" placeholder="이름">
+                      </div>
                     </div>
                   </td>
                   <th>이메일 입력</th>
                   <td>
-                    <div class="form-inline">
-                      <input type="text" class="form-control col mr-2" placeholder="직접입력">
+                    <div class="form-row">
+                      <div class="col">
+                        <input type="text" class="form-control" placeholder="직접입력">
+                      </div>
                       <span>@naver.com</span>
                     </div>
                   </td>
@@ -302,7 +308,7 @@
 
             <table class="table table-bordered">
               <colgroup>
-                <col width="215px">
+                <col width="10%">
                 <col width="">
               </colgroup>
               <tbody>
@@ -320,7 +326,7 @@
 
             <table class="table table-bordered">
               <colgroup>
-                <col width="215px">
+                <col width="10%">
                 <col width="">
               </colgroup>
               <tbody>
@@ -330,7 +336,7 @@
                     <div class="input-group">
                       <div class="custom-file">
                         <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
-                        <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                        <label class="custom-file-label" for="inputGroupFile01">파일 선택</label>
                       </div>
                     </div>
                   </td>
@@ -338,29 +344,8 @@
               </tbody>
             </table>
 
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-               모달모달모달
-            </button>
-            <!--모달 html-->
-            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    내용
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                  </div>
-                </div>
-              </div>
-            </div>
+            
+            
 
         </main>
 

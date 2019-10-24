@@ -198,7 +198,77 @@
                         </div>
                         <div class="col">
                             <!-- Button trigger modal -->
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalScrollable">주소 검색</button>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#post">주소 검색</button>
+                            <!-- Modal 내용 sta -->
+                            <div class="modal fade" id="post" tabindex="-1" role="dialog" aria-labelledby="exampleModalpostTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalpostTitle">우편번호 검색</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="post_wrap">
+                                            <div class="input-group post_search">
+                                                <input type="text" class="form-control" id="idadd" placeholder="도로명, 건물명, 번지로 검색해주세요" aria-label="Recipient's username" aria-describedby="button-addon2">
+                                                <div class="input-group-append">
+                                                    <button class="btn btn-primary" type="submit" id="button-addon2">검색</button>
+                                                </div>  
+                                            </div>
+                                            <div class="post_txt">
+                                                <strong>검색결과</strong><span>13건</span>
+                                            </div>
+                                            <div class="modal-body post_body">
+                                                <div class="new_addr">
+                                                    <span class="border">도로명</span>
+                                                    <span class="addr_txt">서울특별시 마포구 양화로 161 케이스퀘어 5-8층</span>  
+                                                </div>
+                                                <div class="old_addr">
+                                                    <span class="border">지번</span>
+                                                    <span class="addr_txt">서울특별시 마포구 동교동 159-5</span>  
+                                                </div>
+                                                <div class="form-group text-center">
+                                                    <input type="text" class="form-control" placeholder="상세주소 입력">
+                                                    <button type="button" class="btn btn-primary">확인</button>
+                                                </div>
+
+                                                <div class="new_addr">
+                                                    <span class="border">도로명</span>
+                                                    <span class="addr_txt">서울특별시 마포구 양화로 161 케이스퀘어 5-8층</span>  
+                                                </div>
+                                                <div class="old_addr">
+                                                    <span class="border">지번</span>
+                                                    <span class="addr_txt">서울특별시 마포구 동교동 159-5</span>  
+                                                </div>
+                                                <div class="new_addr">
+                                                    <span class="border">도로명</span>
+                                                    <span class="addr_txt">서울특별시 마포구 양화로 161 케이스퀘어 5-8층</span>  
+                                                </div>
+                                                <div class="old_addr">
+                                                    <span class="border">지번</span>
+                                                    <span class="addr_txt">서울특별시 마포구 동교동 159-5</span>  
+                                                </div>
+                                            </div>
+                                            <div class="post_info">
+                                                <strong>우편번호 통합검색 Tip</strong>
+                                                <div class="mt-3">
+                                                    도로명 + 건물번호 (예: 한강로 100)<br>
+                                                    동/읍/면/리 + 번지(예: 한강로 2가 424)<br>
+                                                    건물명, 아파트명(예: 반포자이아파트)
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+                                            <button type="button" class="btn btn-primary">확인</button>
+                                        </div>
+                                        -->
+                                    </div>
+                                </div> 
+                            </div> 
+                            <!-- modal 내용 end -->
                         </div>
                     </div>
                     <div class="mt-3">

@@ -150,3 +150,44 @@ body.login_body {
 .form-signin .form-control:focus {
     z-index: 2;
 }
+
+/* modal */
+.modal-content .modal-header, 
+.modal-content .post_wrap .post_search,
+.modal-content .post_wrap .post_info{
+    padding: 20px;
+}
+.modal-content .post_wrap .post_body{
+    height: 350px;
+}
+.post_wrap .post_body .new_addr,
+.post_wrap .post_body .old_addr{
+    padding-bottom: 8px;
+}
+.post_wrap .post_body .border{
+    display: inline-block;
+    line-height: 38px;
+    width: 70px;
+    text-align: center;
+}
+.post_wrap .post_body .addr_txt{
+    display: inline-block;
+    margin-left: 20px;
+}
+.post_wrap .post_body .form-group .form-control,
+.post_wrap .post_body .form-group .btn{
+    margin-top: 15px;
+}
+.post_wrap .post_txt{
+    padding: 20px 20px 0 20px;
+}
+.post_wrap .post_txt strong{
+    float: left;
+    font-size: 16px;
+}
+.post_wrap .post_txt span{
+    float: right;
+}
+.post_body{
+    clear: both;
+}
