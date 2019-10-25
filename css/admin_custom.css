@@ -191,7 +191,5 @@ body.login_body {
 .post_body{
     clear: both;
 }
-.invalid-feedback.feedback_num span{
-    float: right;
-}
+
 
