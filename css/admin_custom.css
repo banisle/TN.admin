@@ -151,45 +151,80 @@ body.login_body {
     z-index: 2;
 }
 
-/* modal */
-.modal-content .modal-header, 
-.modal-content .post_wrap .post_search,
-.modal-content .post_wrap .post_info{
+/* 우편번호 modal */
+.postmodal_wrap .postmodal_result ul{
+    list-style: none;
+    padding-left: 0px;
+}
+.postmodal_wrap .postmodal_result input[type="radio"] {
+    overflow: hidden;
+    border: 0;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+}
+.postmodal_wrap .postmodal_result li input.form-check-input:checked+label{
+    background: #f7f7f7;
+    border: 1px solid #007bff;
+}
+.postmodal_wrap .postmodal_result li label{
+    display: block;
+    padding: 10px;
+    font-size: 15px;
+}
+.postmodal_content .postmodal_header, 
+.postmodal_content .postmodal_wrap .postmodal_search,
+.postmodal_content .postmodal_wrap .postmodal_info{
     padding: 20px;
 }
-.modal-content .post_wrap .post_body{
+.postmodal_content .postmodal_wrap .postmodal_body{
     height: 350px;
 }
-.post_wrap .post_body .new_addr,
-.post_wrap .post_body .old_addr{
-    padding-bottom: 8px;
+.postmodal_wrap .postmodal_body .new_addr{
+    padding-bottom: 7px;
 }
-.post_wrap .post_body .border{
+.postmodal_wrap .postmodal_body .border{
     display: inline-block;
     line-height: 38px;
     width: 70px;
     text-align: center;
 }
-.post_wrap .post_body .addr_txt{
+.postmodal_wrap .postmodal_body .addr_txt{
     display: inline-block;
     margin-left: 20px;
 }
-.post_wrap .post_body .form-group .form-control,
-.post_wrap .post_body .form-group .btn{
+.postmodal_wrap .postmodal_body .form-group .form-control,
+.postmodal_wrap .postmodal_body .form-group .btn{
     margin-top: 15px;
 }
-.post_wrap .post_txt{
+.postmodal_wrap .postmodal_txt{
     padding: 20px 20px 0 20px;
 }
-.post_wrap .post_txt strong{
+.postmodal_wrap .postmodal_txt strong{
     float: left;
     font-size: 16px;
 }
-.post_wrap .post_txt span{
+.postmodal_wrap .postmodal_txt span{
     float: right;
 }
-.post_body{
+.postmodal_body{
     clear: both;
 }
+.postmodal_content .postmodal_wrap .postmodal_info div{
+    margin-top: 16px;
+}
 
-
+/* 이메일문의 modal */
+.emailmodal_content .emailmodal_header .email_close{
+    position: absolute;
+    right: 20px;
+}
+.modal-content.emailmodal_content .emailmodal_body div{
+    margin-top: 16px;
+}
+.modal-content.emailmodal_content .emailmodal_footer{
+    text-align: center;
+    margin-bottom: 16px;
+}
