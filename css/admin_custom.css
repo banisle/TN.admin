@@ -152,52 +152,10 @@ body.login_body {
 }
 
 /* 우편번호 modal */
-.postmodal_wrap .postmodal_result ul{
-    list-style: none;
-    padding-left: 0px;
-}
-.postmodal_wrap .postmodal_result input[type="radio"] {
-    overflow: hidden;
-    border: 0;
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    clip: rect(1px, 1px, 1px, 1px);
-    clip-path: inset(50%);
-}
-.postmodal_wrap .postmodal_result li input.form-check-input:checked+label{
-    background: #f7f7f7;
-    border: 1px solid #007bff;
-}
-.postmodal_wrap .postmodal_result li label{
-    display: block;
-    padding: 10px;
-    font-size: 15px;
-}
 .postmodal_content .postmodal_header, 
 .postmodal_content .postmodal_wrap .postmodal_search,
 .postmodal_content .postmodal_wrap .postmodal_info{
     padding: 20px;
-}
-.postmodal_content .postmodal_wrap .postmodal_body{
-    height: 350px;
-}
-.postmodal_wrap .postmodal_body .new_addr{
-    padding-bottom: 7px;
-}
-.postmodal_wrap .postmodal_body .border{
-    display: inline-block;
-    line-height: 38px;
-    width: 70px;
-    text-align: center;
-}
-.postmodal_wrap .postmodal_body .addr_txt{
-    display: inline-block;
-    margin-left: 20px;
-}
-.postmodal_wrap .postmodal_body .form-group .form-control,
-.postmodal_wrap .postmodal_body .form-group .btn{
-    margin-top: 15px;
 }
 .postmodal_wrap .postmodal_txt{
     padding: 20px 20px 0 20px;
@@ -212,6 +170,53 @@ body.login_body {
 .postmodal_body{
     clear: both;
 }
+.postmodal_content .postmodal_wrap .postmodal_body{
+    height: 350px;
+}
+.postmodal_wrap .postmodal_body ul{
+    list-style: none;
+    padding-left: 0px;
+}
+.postmodal_wrap .postmodal_body input[type="radio"] {
+    overflow: hidden;
+    border: 0;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+}
+.postmodal_wrap .postmodal_body li label{
+    display: block;
+    padding: 10px;
+    font-size: 15px;
+}
+.postmodal_wrap .postmodal_body li input.form-check-input:checked+label{
+    background: #f7f7f7;
+    border: 1px solid #007bff;
+}
+.postmodal_wrap .postmodal_body li input.form-check-input.selected + label{
+    background: #ffffff;
+    border: 1px solid #ffffff;
+}
+.postmodal_wrap .postmodal_body .form-check-label .new_addr{
+    padding-bottom: 7px;
+}
+.postmodal_wrap .postmodal_body .form-check-label .border{
+    display: inline-block;
+    line-height: 38px;
+    width: 70px;
+    text-align: center;
+}
+.postmodal_wrap .postmodal_body .form-check-label .addr_txt{
+    display: inline-block;
+    margin-left: 20px;
+}
+.postmodal_wrap .postmodal_body .form-group .form-control,
+.postmodal_wrap .postmodal_body .form-group .btn{
+    margin-top: 15px;
+}
+
 .postmodal_content .postmodal_wrap .postmodal_info div{
     margin-top: 16px;
 }
