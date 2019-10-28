@@ -211,9 +211,9 @@
                                         </div>
                                         <div class="postmodal_wrap">
                                             <div class="input-group postmodal_search">
-                                                <input type="text" class="form-control" id="idadd" placeholder="도로명, 건물명, 번지로 검색해주세요" aria-label="Recipient's username" aria-describedby="button-addon2">
+                                                <input type="text" class="form-control" id="" placeholder="도로명, 건물명, 번지로 검색해주세요" aria-label="Recipient's username" aria-describedby="button-addon2">
                                                 <div class="input-group-append">
-                                                    <button class="btn btn-primary" type="submit" id="button-addon2">검색</button>
+                                                    <button class="btn btn-primary" type="submit" id="">검색</button>
                                                 </div>  
                                             </div>
                                             <!-- (sta) 개발자 전달 : 검색결과 , 검색성공후에 show ,기본 hide -->
@@ -221,41 +221,54 @@
                                                 <strong>검색결과</strong><span>13건</span>
                                             </div>
                                             <div class="modal-body postmodal_body">
-                                                <!-- 개발자 전달 : 검색 결과 선택 후 -->
-                                                <div class="new_addr">
-                                                    <span class="border">도로명</span>
-                                                    <span class="addr_txt">서울특별시 마포구 양화로 161 케이스퀘어 5-8층</span>  
-                                                </div>
-                                                <div class="old_addr">
-                                                    <span class="border">지번</span>
-                                                    <span class="addr_txt">서울특별시 마포구 동교동 159-5</span>  
-                                                </div>
-                                                <div class="form-group text-center">
-                                                    <input type="text" class="form-control" placeholder="상세주소 입력">
-                                                    <button type="button" class="btn btn-primary">확인</button>
-                                                </div>
-                                                <!-- 개발자 전달 :  검색결과 선택 전 -->
-                                                <div class="postmodal_result">
-                                                    <div class="new_addr">
-                                                        <span class="border">도로명</span>
-                                                        <span class="addr_txt">서울특별시 마포구 양화로 161 케이스퀘어 5-8층</span>  
-                                                    </div>
-                                                    <div class="old_addr">
-                                                        <span class="border">지번</span>
-                                                        <span class="addr_txt">서울특별시 마포구 동교동 159-5</span>  
-                                                    </div>
-                                                </div> 
-                                                <div class="postmodal_result">   
-                                                    <div class="new_addr">
-                                                        <span class="border">도로명</span>
-                                                        <span class="addr_txt">서울특별시 마포구 양화로 161 케이스퀘어 5-8층</span>  
-                                                    </div>
-                                                    <div class="old_addr">
-                                                        <span class="border">지번</span>
-                                                        <span class="addr_txt">서울특별시 마포구 동교동 159-5</span>  
-                                                    </div>
-                                                </div>    
-                                                <!-- (end) 검색결과 -->
+                                                <ul>
+                                                    <li>
+                                                        <!-- 개발자 전달 : 검색 결과 선택 후 -->
+                                                        <input class="form-check-input selected" type="radio" name="exampleRadios" id="add01" value="option1" checked>
+                                                        <label class="form-check-label" for="add01">
+                                                            <div class="new_addr">
+                                                                <span class="border">도로명</span>
+                                                                <span class="addr_txt">서울특별시 마포구 양화로 161 케이스퀘어 5-8층</span>  
+                                                            </div>
+                                                            <div class="old_addr">
+                                                                <span class="border">지번</span>
+                                                                <span class="addr_txt">서울특별시 마포구 동교동 159-5</span>  
+                                                            </div>
+                                                        </label>
+                                                        <div class="form-group text-center">
+                                                            <input type="text" class="form-control" placeholder="상세주소 입력">
+                                                            <button type="button" class="btn btn-primary">확인</button>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <!-- 개발자 전달 :  검색결과 선택 전 -->
+                                                        <input class="form-check-input" type="radio" name="exampleRadios" id="add02" value="option1" checked>
+                                                        <label class="form-check-label" for="add02">
+                                                            <div class="new_addr">
+                                                                <span class="border">도로명</span>
+                                                                <span class="addr_txt">서울특별시 마포구 양화로 161 케이스퀘어 5-8층</span>  
+                                                            </div>
+                                                            <div class="old_addr">
+                                                                <span class="border">지번</span>
+                                                                <span class="addr_txt">서울특별시 마포구 동교동 159-5</span>  
+                                                            </div>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <input class="form-check-input" type="radio" name="exampleRadios" id="add03" value="option1" checked>
+                                                        <label class="form-check-label" for="add03">
+                                                            <div class="new_addr">
+                                                                <span class="border">도로명</span>
+                                                                <span class="addr_txt">서울특별시 마포구 양화로 161 케이스퀘어 5-8층</span>  
+                                                            </div>
+                                                            <div class="old_addr">
+                                                                <span class="border">지번</span>
+                                                                <span class="addr_txt">서울특별시 마포구 동교동 159-5</span>  
+                                                            </div>
+                                                        </label>
+                                                        <!-- (end) 검색결과 -->
+                                                    </li>
+                                                </ul>   
                                             </div>
                                             <div class="postmodal_info">
                                                 <strong>우편번호 통합검색 Tip</strong>
@@ -266,24 +279,18 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <!--
-                                        <div class="modal-footer postmodal_footer">
-                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
-                                            <button type="button" class="btn btn-primary">확인</button>
-                                        </div>
-                                        -->
                                     </div>
                                 </div> 
                             </div>
-                            <!-- Modal end --> 
-                        </div>
+                            <!-- Modal end--> 
+                        </div>    
                     </div>
                     <div class="mt-3">
                         <input type="text" class="form-control" placeholder="상세주소 입력">
                     </div>
                 </div>
 
-                <hr class="mt-4 mb-4">
+                <hr>
                 
                 <h6 class="mb-4"><strong>기타정보</strong></h6>
 
@@ -295,7 +302,7 @@
                     </div>
                 </div>
 
-                <hr class="mt-4 mb-4">
+                <hr>
                 
                 <form class="was-validated">
                     <div class="custom-control custom-checkbox">

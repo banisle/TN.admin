@@ -151,6 +151,11 @@ body.login_body {
     z-index: 2;
 }
 
+hr{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
 /* 우편번호 modal */
 .postmodal_content .postmodal_header, 
 .postmodal_content .postmodal_wrap .postmodal_search,
