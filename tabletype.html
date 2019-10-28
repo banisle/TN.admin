@@ -74,37 +74,82 @@
         <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
 
             <h1 class="">조회 테이블</h1>
-            <!-- 검색 테이블 -->
+            <table class="table search_day">
+                <colgroup>
+                  <col width="10%">
+                  <col width="23%">
+                  <col width="27%">
+                  <col width="">
+                </colgroup>
+                <tr>
+                  <th>조회기간</th>
+                  <td>
+                      <span class="datepick"><input type="text" class="form-control"></span>
+                      ~
+                      <span class="datepick"><input type="text" class="form-control"></span>
+                    </td>
+                  <td>
+                      <div class="btn-group btn-group-toggle" data-toggle="buttons"><!--라디오는 name를 동일하게 줘야함 체크박스는 다르게 줘야함-->
+                        <label class="btn btn-secondary active">
+                            <input type="radio" name="options" id="option1" autocomplete="off" checked> 오늘
+                        </label>
+                        <label class="btn btn-secondary">
+                            <input type="radio" name="options" id="option2" autocomplete="off"> 7일
+                        </label>
+                        <label class="btn btn-secondary">
+                            <input type="radio" name="options" id="option3" autocomplete="off"> 1개월
+                        </label>
+                        <label class="btn btn-secondary">
+                            <input type="radio" name="options" id="option4" autocomplete="off"> 3개월
+                        </label>
+                        <label class="btn btn-secondary">
+                            <input type="radio" name="options" id="option5" autocomplete="off"> 6개월
+                        </label>
+                        <label class="btn btn-secondary">
+                            <input type="radio" name="options" id="option6" autocomplete="off"> 12개월
+                        </label>
+                      </div>
+                  </td>
+                  <th>
+                      <button type="button" class="btn btn-outline-dark">기간 조회</button>
+                  </th>
+                </tr>
+            </table>
+            <!--
             <div class="form-inline">
                 <strong class="col-1">조회기간</strong>
-                <div class="col-3 ml-4">
-                    <span class="datepick"><input type="text" class="form-control col-form-label-sm"></span>~<span class="datepick"><input type="text" class="form-control col-form-label-sm"></span>
-                </div>
-                <div class="btn-group btn-group-toggle" data-toggle="buttons"><!--라디오는 name를 동일하게 줘야함 체크박스는 다르게 줘야함-->
-                    <label class="btn btn-sm btn-secondary active">
-                        <input type="radio" name="options" id="option1" autocomplete="off" checked> 오늘
-                    </label>
-                    <label class="btn btn-sm btn-secondary">
-                        <input type="radio" name="options" id="option2" autocomplete="off"> 7일
-                    </label>
-                    <label class="btn btn-sm btn-secondary">
-                        <input type="radio" name="options" id="option3" autocomplete="off"> 1개월
-                    </label>
-                    <label class="btn btn-sm btn-secondary">
-                        <input type="radio" name="options" id="option4" autocomplete="off"> 3개월
-                    </label>
-                    <label class="btn btn-sm btn-secondary">
-                        <input type="radio" name="options" id="option5" autocomplete="off"> 6개월
-                    </label>
-                    <label class="btn btn-sm btn-secondary">
-                        <input type="radio" name="options" id="option6" autocomplete="off"> 12개월
-                    </label>
-                </div>
-                <div class="col">
-                    <button type="button" class="btn btn-outline-dark btn-sm">기간 조회</button>
+                <div class="form-inline">
+                  <div class="col-5 ml-4">
+                      <span class="datepick"><input type="text" class="form-control"></span>~<span class="datepick"><input type="text" class="form-control col-form-label-sm"></span>
+                  </div>
+                  <div class="btn-group btn-group-toggle" data-toggle="buttons"> //라디오는 name를 동일하게 줘야함 체크박스는 다르게 줘야함
+                      <label class="btn btn-sm btn-secondary active">
+                          <input type="radio" name="options" id="option1" autocomplete="off" checked> 오늘
+                      </label>
+                      <label class="btn btn-secondary">
+                          <input type="radio" name="options" id="option2" autocomplete="off"> 7일
+                      </label>
+                      <label class="btn btn-secondary">
+                          <input type="radio" name="options" id="option3" autocomplete="off"> 1개월
+                      </label>
+                      <label class="btn btn-secondary">
+                          <input type="radio" name="options" id="option4" autocomplete="off"> 3개월
+                      </label>
+                      <label class="btn btn-secondary">
+                          <input type="radio" name="options" id="option5" autocomplete="off"> 6개월
+                      </label>
+                      <label class="btn btn-secondary">
+                          <input type="radio" name="options" id="option6" autocomplete="off"> 12개월
+                      </label>
+                  </div>
+                  <div class=" ml-4">
+                      <button type="button" class="btn btn-outline-dark">기간 조회</button>
+                  </div>
                 </div>
             </div>
-            <table class="table table-bordered mt-2">
+            -->
+            
+            <table class="table table-bordered">
               <colgroup>
                 <col width="10%">
                 <col width="23%">
@@ -411,196 +456,7 @@
                  
             
             
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-<!--
-            <table class="table table-bordered">
-              <colgroup>
-                <col width="200px">
-                <col width="500px">
-                <col width="200px">
-                <col width="500px">
-                <col width="200px">
-                <col width="500px">
-              </colgroup>
-              <tbody>
-                <tr>
-                  <th>상태</th>
-                  <td>
-                    <select class="form-control">
-                      <option>정상</option>
-                      <option>비정상</option>
-                    </select>  
-                  </td>
-                  <th>카테고리</th>
-                  <td>
-                    <select class="form-control">
-                      <option>전체</option>
-                      <option>카테고리1</option>
-                      <option>카테고리2</option>
-                    </select>
-                  </td>
-                  <th>기관</th>
-                  <td>
-                    <select class="form-control">
-                      <option>전체</option>
-                      <option>카테고리1</option>
-                      <option>카테고리2</option>
-                    </select>
-                  </td>
-                </tr>
-                <tr>
-                  <th>검색 입력</th>
-                  <td colspan="5">
-                    <div class="form-inline">
-                      <select class="form-control col-2 mr-2">
-                        <option>전체</option>
-                        <option>카테고리1</option>
-                        <option>카테고리2</option>
-                      </select>
-                      <input type="text" class="form-control col">
-                    </div>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            
-            <table class="table table-bordered">
-              <colgroup>
-                <col width="200px">
-                <col width="500px">
-                <col width="200px">
-                <col width="500px">
-              </colgroup>
-              <thead>
-                <tr class="table-active">
-                  <th colspan="4">기본정보</th>
-                </tr>
-              </thead> 
-              <tbody>
-                <tr>
-                  <th>상태</th>
-                  <td>정상</td>
-                  <th>카테고리</th>
-                  <td>
-                    <select class="form-control">
-                      <option>전체</option>
-                      <option>카테고리1</option>
-                      <option>카테고리2</option>
-                    </select>
-                  </td>
-                </tr>
-                <tr>
-                  <th>이름</th>
-                  <td>
-                    <div class="form-inline">
-                        <input type="text" class="form-control col mr-1" placeholder="성">
-                        <input type="text" class="form-control col" placeholder="이름">
-                    </div>
-                  </td>
-                  <th>이메일 입력</th>
-                  <td>
-                    <div class="form-inline">
-                      <input type="text" class="form-control col mr-2" placeholder="직접입력">
-                      <span>@naver.com</span>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                    <th>상태</th>
-                    <td>
-                      <select class="form-control">
-                          <option>전체</option>
-                          <option>카테고리1</option>
-                          <option>카테고리2</option>
-                        </select>
-                    </td>
-                    <th>카테고리</th>
-                    <td>
-                      <select class="form-control">
-                        <option>전체</option>
-                        <option>카테고리1</option>
-                        <option>카테고리2</option>
-                      </select>
-                    </td>
-                  </tr>
-              </tbody>
-            </table>
 
-            <table class="table table-bordered">
-              <colgroup>
-                <col width="215px">
-                <col width="">
-              </colgroup>
-              <tbody>
-                <tr>
-                  <th>주소</th>
-                  <td>
-                    <div class="form-inline">
-                      <input class="form-control form-control col mr-2" type="text" placeholder="주소입력">
-                      <button type="submit" class="btn btn-success">주소 검색</button>
-                    </div>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-
-            <table class="table table-bordered">
-              <colgroup>
-                <col width="215px">
-                <col width="">
-              </colgroup>
-              <tbody>
-                <tr>
-                  <th>파일 등록</th>
-                  <td>
-                    <div class="input-group">
-                      <div class="custom-file">
-                        <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
-                        <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
-                      </div>
-                    </div>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-               모달모달모달
-            </button>
-            모달 html
-            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    내용
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                  </div>
-                </div>
-              </div>
-            </div>
--->
 
         </main>
 

@@ -155,6 +155,18 @@ hr{
     margin-top: 25px;
     margin-bottom: 25px;
 }
+/* 데이트 피커 */
+.table.search_day .datepick .form-control{
+    display: inline-block;
+}
+/* 인덱스 게시판 기간조회 테이블 */
+.table.search_day th,
+.table.search_day td{
+    border: none;
+}
+.table.search_day td{
+    text-align: center;
+}
 
 /* 우편번호 modal */
 .postmodal_content .postmodal_header, 
