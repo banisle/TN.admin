@@ -11,7 +11,7 @@
     <!-- admin custom CSS -->
     <link rel="stylesheet" href="/css/admin_custom.css" />
 
-        <!-- Optional JavaScript -->
+    <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="/js/jquery-3.4.1.min.js"></script>
     <script src="/js/bootstrap.bundle.min.js"></script>
@@ -42,51 +42,40 @@
     <!-- //mark : 컨테이너 -->
     <div class="container-fluid">
         <div class="row">
-            <nav class="col-md-2 d-none d-md-block bg-light sidebar">
-                <div class="sidebar-sticky">
-                    <ul class="nav flex-column">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="index.html">
-                                index
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="login.html">
-                                로그인
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="join.html">
-                                회원가입
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="tabletype.html">
-                                게시판
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="btn.html">
-                                버튼
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="tab.html">
-                                탭메뉴
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="table.html">
-                                table
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="modal.html">
-                                modal
-                            </a>
-                        </li>
-                    </ul>
-
+            <nav id="sidebar" class="col-md-2 d-none d-md-block bg-light ">
+                <div class="list-group panel">
+                    <a href="#menu1" class="list-group-item collapsed" data-toggle="collapse" data-parent="#sidebar"
+                        aria-expanded="false"><span class="hidden-sm-down">Item 1 - hasSub</span>
+                    </a>
+                    <div class="collapse" id="menu1">
+                        <a href="#" class="list-group-item" data-parent="#menu1">Subitem 2</a>
+                        <a href="#" class="list-group-item" data-parent="#menu1">Subitem 3</a>
+                    </div>
+                    <a href="#" class="list-group-item collapsed" data-parent="#sidebar">
+                        <span class="hidden-sm-down">Item 2</span></a>
+                    <a href="#menu3" class="list-group-item collapsed" data-toggle="collapse" data-parent="#sidebar"
+                        aria-expanded="false"><span class="hidden-sm-down">Item 3 - hasSub</span></a>
+                    <div class="collapse" id="menu3">
+                        <a href="#" class="list-group-item" data-parent="#menu3">3.1</a>
+                        <a href="#" class="list-group-item" data-parent="#menu3">3.3</a>
+                    </div>
+                    <a href="#" class="list-group-item collapsed" data-parent="#sidebar">
+                        <span class="hidden-sm-down">Item 4</span></a>
+                    <a href="#" class="list-group-item collapsed" data-parent="#sidebar">
+                        <span class="hidden-sm-down">Item 5</span></a>
+                    <a href="#" class="list-group-item collapsed" data-parent="#sidebar">
+                        <span class="hidden-sm-down">Link</span></a>
+                    <a href="#" class="list-group-item collapsed" data-parent="#sidebar"><span
+                            class="hidden-sm-down">Link</span></a>
+                    <a href="#" class="list-group-item collapsed" data-parent="#sidebar">
+                        <span class="hidden-sm-down">Link</span></a>
+                    <a href="#" class="list-group-item collapsed" data-parent="#sidebar">
+                        <span class="hidden-sm-down">Link</span></a>
+                    <a href="#" class="list-group-item collapsed" data-parent="#sidebar">
+                        <span class="hidden-sm-down">Link</span></a>
+                    <a href="#" class="list-group-item collapsed" data-parent="#sidebar"><span class="hidden-sm-down">Link</span></a>
+                    <a href="#" class="list-group-item collapsed" data-parent="#sidebar">
+                        <span class="hidden-sm-down">Link</span></a>
                 </div>
             </nav>
 
@@ -155,9 +144,9 @@
     </div>
 
 
-<script>
+    <script>
 
-</script>
+    </script>
 </body>
 
 </html>
