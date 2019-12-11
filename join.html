@@ -7,361 +7,357 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
     <!-- admin custom CSS -->
-    <link rel="stylesheet" href="css/admin_custom.css" />
-    <!-- 데이트피커-->
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <style>
-    </style>
-    <title>어드민 템플릿-회원가입</title>
-</head>
-<body>
-    <!-- //mark : 컨테이너 -->
-    <div class="container-fluid">
-        <div class="row">
-            <nav class="col-md-2 d-none d-md-block bg-light sidebar">
-                <div class="sidebar-sticky">
-                    <ul class="nav flex-column">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">
-                                index
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="login.html">
-                                로그인
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="join.html">
-                                회원가입
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="tabletype.html">
-                                게시판
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="btn.html">
-                                버튼
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="tab.html">
-                                탭메뉴
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="table.html">
-                                table
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="modal.html">
-                                modal
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>    
-        
-        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
-
-            <h1 class="mb-5">회원가입</h1>
-            
-            <div class="">
-               
-                <h6 class="mb-4"><strong>기본정보</strong></h6>
-    
-                <div class="form-group">
-                    <label for="id">아이디(이메일)</label>
-                    <div class="form-row">
-                        <div class="col">
-                            <input type="text" class="form-control is-valid" id="id" placeholder="직접 입력" required autofocus>
-                            <div class="valid-feedback">이메일 형식에 맞게 입력</div>
-                        </div>
-                        <div class="col">
-                            <button type="submit" class="btn btn-primary">중복확인</button>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="form-group">
-                    <label for="idadd">아이디(이메일)</label>
-                    <!-- input Button addons defult-->
-                    <div class="input-group">
-                        <input type="text" class="form-control" id="idadd" placeholder="직접 입력" aria-label="Recipient's username" aria-describedby="button-addon2">
-                        <div class="input-group-append">
-                            <button class="btn btn-primary" type="button" id="button-addon2">중복확인</button>
-                        </div>
-                    </div>
-                    <small id="emaillcom" class="form-text text-muted">입력한 이메일 주소로 인증번호를 받을 수 있습니다.</small>
-                </div>
-                
-                <div class="form-group">
-                    <label for="password">비밀번호</label>
-                    <div>
-                        <input type="password" class="form-control is-valid" id="password" placeholder="" required>
-                        <div class="valid-feedback">8~14자 이내 영문, 숫자 및 특수문자(!@#$%^&+=) 혼합으로 입력</div>
-                    </div>
-                    <div class="mt-3">
-                        <input type="password" class="form-control is-invalid" placeholder="">
-                        <div class="invalid-feedback">비밀번호 재확인</div>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label for="name">이름</label>
-                    <div class="form-row">
-                        <div class="col">
-                            <input type="text" class="form-control" id="name" placeholder="성">
-                        </div>
-                        <div class="col">
-                            <input type="text" class="form-control" placeholder="이름">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label for="day">생년월일</label>
-                    <div class="form-row">
-                        <div class="col">
-                            <input type="text" class="form-control" id="day" placeholder="년">
-                        </div>
-                        <div class="col">    
-                            <select class="form-control">
-                                <option>월</option>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                                <option>6</option>
-                                <option>7</option>
-                                <option>8</option>
-                                <option>9</option>
-                                <option>10</option>
-                                <option>11</option>
-                                <option>12</option>
-                            </select>
-                        </div>
-                        <div class="col">    
-                            <input type="text" class="form-control col" placeholder="일">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label for="phonenumber">휴대전화번호</label>
-                    <div class="form-row">
-                        <div class="col">
-                            <select class="form-control">
-                                <option>선택</option>
-                                <option>010</option>
-                                <option>011</option>
-                            </select>
-                        </div>
-                        <div class="col">
-                            <input type="text" class="form-control" placeholder="">
-                        </div>
-                        <div class="col">
-                            <input type="text" class="form-control" placeholder="">
-                        </div>
-                    </div>
-                </div>
-                    
-                <div class="form-group">
-                    <label for="email">본인확인 수신 이메일</label>
-                    <div class="form-row">
-                        <div class="col">
-                            <input type="email" class="form-control" id="email" placeholder="이메일 입력">
-                            <small id="emaillHelp" class="form-text text-muted">입력한 이메일 주소로 인증번호를 받을 수 있습니다.</small>
-                        </div>
-                        <div class="col">
-                            <button type="submit" class="btn btn-primary">인증받기</button>
-                        </div> 
-                    </div>
-                    <div class="mt-3">
-                        <input type="text" class="form-control" placeholder="인증번호 입력">
-                        <small id="emaillHelp2" class="form-text text-muted">※ 본인확인 수신 이메일 정보는 계정분실 시 계정정보 찾기에도 필요하오니 주로 사용하는 이메일을 입력해주세요.</small>   
-                    </div> 
-                </div>
-
-                <div class="form-group">
-                    <label for="address">주소</label>
-                    <div class="form-row">
-                        <div class="col">
-                            <input type="text" class="form-control" id="address" placeholder="주소 검색">
-                        </div>
-                        <div class="col">
-                            <!-- Button trigger modal -->
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#postmodal">주소 검색</button>
-                            <!-- Modal sta-->
-                            <div class="modal fade" id="postmodal" tabindex="-1" role="dialog" aria-labelledby="ModalpostTitle" aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered" role="document">
-                                    <div class="modal-content postmodal_content">
-                                        <div class="modal-header postmodal_header">
-                                            <h5 class="modal-title" id="ModalpostTitle">우편번호 검색</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">&times;</span>
-                                            </button>
-                                        </div>
-                                        <div class="postmodal_wrap">
-                                            <div class="input-group postmodal_search">
-                                                <input type="text" class="form-control" id="" placeholder="도로명, 건물명, 번지로 검색해주세요" aria-label="Recipient's username" aria-describedby="button-addon2">
-                                                <div class="input-group-append">
-                                                    <button class="btn btn-primary" type="submit" id="">검색</button>
-                                                </div>  
-                                            </div>
-                                            <!-- (sta) 개발자 전달 : 검색결과 , 검색성공후에 show ,기본 hide -->
-                                            <div class="postmodal_txt">
-                                                <strong>검색결과</strong><span>13건</span>
-                                            </div>
-                                            <div class="modal-body postmodal_body">
-                                                <ul>
-                                                    <li>
-                                                        <!-- 개발자 전달 : 검색 결과 선택 후 -->
-                                                        <input class="form-check-input selected" type="radio" name="exampleRadios" id="add01" value="option1" checked>
-                                                        <label class="form-check-label" for="add01">
-                                                            <div class="new_addr">
-                                                                <span class="border">도로명</span>
-                                                                <span class="addr_txt">서울특별시 마포구 양화로 161 케이스퀘어 5-8층</span>  
-                                                            </div>
-                                                            <div class="old_addr">
-                                                                <span class="border">지번</span>
-                                                                <span class="addr_txt">서울특별시 마포구 동교동 159-5</span>  
-                                                            </div>
-                                                        </label>
-                                                        <div class="form-group text-center">
-                                                            <input type="text" class="form-control" placeholder="상세주소 입력">
-                                                            <button type="button" class="btn btn-primary">확인</button>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <!-- 개발자 전달 :  검색결과 선택 전 -->
-                                                        <input class="form-check-input" type="radio" name="exampleRadios" id="add02" value="option1" checked>
-                                                        <label class="form-check-label" for="add02">
-                                                            <div class="new_addr">
-                                                                <span class="border">도로명</span>
-                                                                <span class="addr_txt">서울특별시 마포구 양화로 161 케이스퀘어 5-8층</span>  
-                                                            </div>
-                                                            <div class="old_addr">
-                                                                <span class="border">지번</span>
-                                                                <span class="addr_txt">서울특별시 마포구 동교동 159-5</span>  
-                                                            </div>
-                                                        </label>
-                                                    </li>
-                                                    <li>
-                                                        <input class="form-check-input" type="radio" name="exampleRadios" id="add03" value="option1" checked>
-                                                        <label class="form-check-label" for="add03">
-                                                            <div class="new_addr">
-                                                                <span class="border">도로명</span>
-                                                                <span class="addr_txt">서울특별시 마포구 양화로 161 케이스퀘어 5-8층</span>  
-                                                            </div>
-                                                            <div class="old_addr">
-                                                                <span class="border">지번</span>
-                                                                <span class="addr_txt">서울특별시 마포구 동교동 159-5</span>  
-                                                            </div>
-                                                        </label>
-                                                        <!-- (end) 검색결과 -->
-                                                    </li>
-                                                </ul>   
-                                            </div>
-                                            <div class="postmodal_info">
-                                                <strong>우편번호 통합검색 Tip</strong>
-                                                <div>
-                                                    도로명 + 건물번호 (예: 한강로 100)<br>
-                                                    동/읍/면/리 + 번지(예: 한강로 2가 424)<br>
-                                                    건물명, 아파트명(예: 반포자이아파트)
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div> 
-                            </div>
-                            <!-- Modal end--> 
-                        </div>    
-                    </div>
-                    <div class="mt-3">
-                        <input type="text" class="form-control" placeholder="상세주소 입력">
-                    </div>
-                </div>
-
-                <hr>
-                
-                <h6 class="mb-4"><strong>기타정보</strong></h6>
-
-                <div class="form-group">
-                    <label>서류 첨부 파일</label>
-                    <div class="custom-file">
-                        <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
-                        <label class="custom-file-label" for="inputGroupFile01">첨부파일</label>
-                    </div>
-                </div>
-
-                <hr>
-                
-                <form class="was-validated">
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="chedak01" required>
-                        <label class="custom-control-label" for="chedak01">개인정보 수집 동의 (필수)</label>
-                        <div class="invalid-feedback"></div>
-                    </div>
-                </form>
-                <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" id="customCheck1">    
-                    <label class="custom-control-label" for="customCheck1">마케팅 이메일 수신 여부 (선택)</label>
-                </div>
-                
-                <div class="form-group text-center mt-3 mb-5">
-                    <button type="button" class="btn btn-secondary btn-lg">취소</button>
-                    <button type="submit" class="btn btn-primary btn-lg">가입하기</button>
-                </div>
-                
-                
-            </div>
-
-        </main>
-
-        
-    </div>
-    <!-- end 컨테이너 -->
-
+    <link rel="stylesheet" href="/css/admin_custom.css" />
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <!-- 데이트피커 -->
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="/js/jquery-3.4.1.min.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
     <!-- admin custom JS -->
-    <script src="js/admin_custom.js"></script>
+    <script src="/js/admin_custom.js"></script>
+
+    <title>어드민 템플릿</title>
+</head>
+
+<body>
+
+    <!-- //mark : (sta) 상단 nav -->
+    <nav class="navbar bg-white fixed-top flex-md-nowrap p-0 shadow">
+        <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">logo</a>
+        <div class="navbar-collapse px-3">
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-info">link</button>
+            </div>
+        </div>
+        <ul class="navbar-nav px-3">
+            <li class="nav-item text-nowrap">
+                <a class="nav-link" href="#">로그인</a>
+                <!-- <a class="nav-link" href="#">Sign out</a> -->
+            </li>
+        </ul>
+    </nav>
+    <!-- (end) 상단 nav -->
+    <!-- //mark : 컨테이너 -->
+    <div class="container-fluid">
+        <div class="row">
+            <nav id="sidebar" class="col-md-2 d-none d-md-block">
+                <div class="list-group panel">
+                    <a href="#menu1" class="list-group-item collapsed" data-toggle="collapse" data-parent="#sidebar"
+                        aria-expanded="false"><span class="hidden-sm-down">Item 1 - hasSub</span>
+                    </a>
+                    <div class="collapse" id="menu1">
+                        <a href="#" class="list-group-item" data-parent="#menu1">Subitem 2</a>
+                        <a href="#" class="list-group-item" data-parent="#menu1">Subitem 3</a>
+                    </div>
+                    <a href="#" class="list-group-item collapsed" data-parent="#sidebar">
+                        <span class="hidden-sm-down">Item 2</span></a>
+                    <a href="#menu3" class="list-group-item collapsed" data-toggle="collapse" data-parent="#sidebar"
+                        aria-expanded="false"><span class="hidden-sm-down">Item 3 - hasSub</span></a>
+                    <div class="collapse" id="menu3">
+                        <a href="#" class="list-group-item" data-parent="#menu3">3.1</a>
+                        <a href="#" class="list-group-item" data-parent="#menu3">3.3</a>
+                    </div>
+                    <a href="./btn.html" class="list-group-item collapsed" data-parent="#sidebar">
+                        <span class="hidden-sm-down">btn</span></a>
+                    <a href="./join.html" class="list-group-item collapsed" data-parent="#sidebar">
+                        <span class="hidden-sm-down">join</span></a>
+                    <a href="./login.html" class="list-group-item collapsed" data-parent="#sidebar">
+                        <span class="hidden-sm-down">login</span></a>
+                    <a href="./modal.html" class="list-group-item collapsed" data-parent="#sidebar"><span
+                            class="hidden-sm-down">modal</span></a>
+                    <a href="./tab.html" class="list-group-item collapsed" data-parent="#sidebar">
+                        <span class="hidden-sm-down">tab</span></a>
+                    <a href="./table.html" class="list-group-item collapsed" data-parent="#sidebar">
+                        <span class="hidden-sm-down">table</span></a>
+                    <a href="./tabletype.html" class="list-group-item collapsed" data-parent="#sidebar">
+                        <span class="hidden-sm-down">tabletype</span></a>
+                </div>
+            </nav>
+
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+
+                <h1 class="mb-5">회원가입</h1>
+                
+                <div class="">
+                   
+                    <h6 class="mb-4"><strong>기본정보</strong></h6>
+        
+                    <div class="form-group">
+                        <label for="id">아이디(이메일)</label>
+                        <div class="form-row">
+                            <div class="col">
+                                <input type="text" class="form-control is-valid" id="id" placeholder="직접 입력" required autofocus>
+                                <div class="valid-feedback">이메일 형식에 맞게 입력</div>
+                            </div>
+                            <div class="col">
+                                <button type="submit" class="btn btn-primary">중복확인</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="idadd">아이디(이메일)</label>
+                        <!-- input Button addons defult-->
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="idadd" placeholder="직접 입력" aria-label="Recipient's username" aria-describedby="button-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" type="button" id="button-addon2">중복확인</button>
+                            </div>
+                        </div>
+                        <small id="emaillcom" class="form-text text-muted">입력한 이메일 주소로 인증번호를 받을 수 있습니다.</small>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="password">비밀번호</label>
+                        <div>
+                            <input type="password" class="form-control is-valid" id="password" placeholder="" required>
+                            <div class="valid-feedback">8~14자 이내 영문, 숫자 및 특수문자(!@#$%^&+=) 혼합으로 입력</div>
+                        </div>
+                        <div class="mt-3">
+                            <input type="password" class="form-control is-invalid" placeholder="">
+                            <div class="invalid-feedback">비밀번호 재확인</div>
+                        </div>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="name">이름</label>
+                        <div class="form-row">
+                            <div class="col">
+                                <input type="text" class="form-control" id="name" placeholder="성">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="이름">
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="day">생년월일</label>
+                        <div class="form-row">
+                            <div class="col">
+                                <input type="text" class="form-control" id="day" placeholder="년">
+                            </div>
+                            <div class="col">    
+                                <select class="form-control">
+                                    <option>월</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                    <option>7</option>
+                                    <option>8</option>
+                                    <option>9</option>
+                                    <option>10</option>
+                                    <option>11</option>
+                                    <option>12</option>
+                                </select>
+                            </div>
+                            <div class="col">    
+                                <input type="text" class="form-control col" placeholder="일">
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="phonenumber">휴대전화번호</label>
+                        <div class="form-row">
+                            <div class="col">
+                                <select class="form-control">
+                                    <option>선택</option>
+                                    <option>010</option>
+                                    <option>011</option>
+                                </select>
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+                        
+                    <div class="form-group">
+                        <label for="email">본인확인 수신 이메일</label>
+                        <div class="form-row">
+                            <div class="col">
+                                <input type="email" class="form-control" id="email" placeholder="이메일 입력">
+                                <small id="emaillHelp" class="form-text text-muted">입력한 이메일 주소로 인증번호를 받을 수 있습니다.</small>
+                            </div>
+                            <div class="col">
+                                <button type="submit" class="btn btn-primary">인증받기</button>
+                            </div> 
+                        </div>
+                        <div class="mt-3">
+                            <input type="text" class="form-control" placeholder="인증번호 입력">
+                            <small id="emaillHelp2" class="form-text text-muted">※ 본인확인 수신 이메일 정보는 계정분실 시 계정정보 찾기에도 필요하오니 주로 사용하는 이메일을 입력해주세요.</small>   
+                        </div> 
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="address">주소</label>
+                        <div class="form-row">
+                            <div class="col">
+                                <input type="text" class="form-control" id="address" placeholder="주소 검색">
+                            </div>
+                            <div class="col">
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#postmodal">주소 검색</button>
+                                <!-- Modal sta-->
+                                <div class="modal fade" id="postmodal" tabindex="-1" role="dialog" aria-labelledby="ModalpostTitle" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered" role="document">
+                                        <div class="modal-content postmodal_content">
+                                            <div class="modal-header postmodal_header">
+                                                <h5 class="modal-title" id="ModalpostTitle">우편번호 검색</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="postmodal_wrap">
+                                                <div class="input-group postmodal_search">
+                                                    <input type="text" class="form-control" id="" placeholder="도로명, 건물명, 번지로 검색해주세요" aria-label="Recipient's username" aria-describedby="button-addon2">
+                                                    <div class="input-group-append">
+                                                        <button class="btn btn-primary" type="submit" id="">검색</button>
+                                                    </div>  
+                                                </div>
+                                                <!-- (sta) 개발자 전달 : 검색결과 , 검색성공후에 show ,기본 hide -->
+                                                <div class="postmodal_txt">
+                                                    <strong>검색결과</strong><span>13건</span>
+                                                </div>
+                                                <div class="modal-body postmodal_body">
+                                                    <ul>
+                                                        <li>
+                                                            <!-- 개발자 전달 : 검색 결과 선택 후 -->
+                                                            <input class="form-check-input selected" type="radio" name="exampleRadios" id="add01" value="option1" checked>
+                                                            <label class="form-check-label" for="add01">
+                                                                <div class="new_addr">
+                                                                    <span class="border">도로명</span>
+                                                                    <span class="addr_txt">서울특별시 마포구 양화로 161 케이스퀘어 5-8층</span>  
+                                                                </div>
+                                                                <div class="old_addr">
+                                                                    <span class="border">지번</span>
+                                                                    <span class="addr_txt">서울특별시 마포구 동교동 159-5</span>  
+                                                                </div>
+                                                            </label>
+                                                            <div class="form-group text-center">
+                                                                <input type="text" class="form-control" placeholder="상세주소 입력">
+                                                                <button type="button" class="btn btn-primary">확인</button>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <!-- 개발자 전달 :  검색결과 선택 전 -->
+                                                            <input class="form-check-input" type="radio" name="exampleRadios" id="add02" value="option1" checked>
+                                                            <label class="form-check-label" for="add02">
+                                                                <div class="new_addr">
+                                                                    <span class="border">도로명</span>
+                                                                    <span class="addr_txt">서울특별시 마포구 양화로 161 케이스퀘어 5-8층</span>  
+                                                                </div>
+                                                                <div class="old_addr">
+                                                                    <span class="border">지번</span>
+                                                                    <span class="addr_txt">서울특별시 마포구 동교동 159-5</span>  
+                                                                </div>
+                                                            </label>
+                                                        </li>
+                                                        <li>
+                                                            <input class="form-check-input" type="radio" name="exampleRadios" id="add03" value="option1" checked>
+                                                            <label class="form-check-label" for="add03">
+                                                                <div class="new_addr">
+                                                                    <span class="border">도로명</span>
+                                                                    <span class="addr_txt">서울특별시 마포구 양화로 161 케이스퀘어 5-8층</span>  
+                                                                </div>
+                                                                <div class="old_addr">
+                                                                    <span class="border">지번</span>
+                                                                    <span class="addr_txt">서울특별시 마포구 동교동 159-5</span>  
+                                                                </div>
+                                                            </label>
+                                                            <!-- (end) 검색결과 -->
+                                                        </li>
+                                                    </ul>   
+                                                </div>
+                                                <div class="postmodal_info">
+                                                    <strong>우편번호 통합검색 Tip</strong>
+                                                    <div>
+                                                        도로명 + 건물번호 (예: 한강로 100)<br>
+                                                        동/읍/면/리 + 번지(예: 한강로 2가 424)<br>
+                                                        건물명, 아파트명(예: 반포자이아파트)
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </div>
+                                <!-- Modal end--> 
+                            </div>    
+                        </div>
+                        <div class="mt-3">
+                            <input type="text" class="form-control" placeholder="상세주소 입력">
+                        </div>
+                    </div>
+    
+                    <hr>
+                    
+                    <h6 class="mb-4"><strong>기타정보</strong></h6>
+    
+                    <div class="form-group">
+                        <label>서류 첨부 파일</label>
+                        <div class="custom-file">
+                            <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+                            <label class="custom-file-label" for="inputGroupFile01">첨부파일</label>
+                        </div>
+                    </div>
+    
+                    <hr>
+                    
+                    <form class="was-validated">
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="chedak01" required>
+                            <label class="custom-control-label" for="chedak01">개인정보 수집 동의 (필수)</label>
+                            <div class="invalid-feedback"></div>
+                        </div>
+                    </form>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck1">    
+                        <label class="custom-control-label" for="customCheck1">마케팅 이메일 수신 여부 (선택)</label>
+                    </div>
+                    
+                    <div class="form-group text-center mt-3 mb-5">
+                        <button type="button" class="btn btn-secondary btn-lg">취소</button>
+                        <button type="submit" class="btn btn-primary btn-lg">가입하기</button>
+                    </div>
+                    
+                    
+                </div>
+    
+            </main>
+        </div>
+    </div>
+
 
     <script>
-      //모달 제이쿼리
-      $('#myModal').on('shown.bs.modal', function () {
-      $('#myInput').trigger('focus')
-      });
-    
-    $(function() {
-        $.datepicker.setDefaults({
-            dateFormat: 'yy-mm-dd'
-            ,showMonthAfterYear:true //년 월
-            ,yearSuffix: "년" //달력의 년도 부분 뒤에 붙는 텍스트
-            ,monthNamesShort: ['1','2','3','4','5','6','7','8','9','10','11','12'] //달력의 월 부분 텍스트
-            ,monthNames: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','12월'] //달력의 월 부분 Tooltip 텍스트
-            ,dayNamesMin: ['일','월','화','수','목','금','토'] //달력의 요일 부분 텍스트
-            ,dayNames: ['일요일','월요일','화요일','수요일','목요일','금요일','토요일'] //달력의 요일 부분 Tooltip 텍스트
+        //모달 제이쿼리
+        $('#myModal').on('shown.bs.modal', function () {
+        $('#myInput').trigger('focus')
         });
-        $( ".datepick input" ).datepicker();
-    });
-
-   
-    </script>
-    
+      
+    //   $(function() {
+    //       $.datepicker.setDefaults({
+    //           dateFormat: 'yy-mm-dd'
+    //           ,showMonthAfterYear:true //년 월
+    //           ,yearSuffix: "년" //달력의 년도 부분 뒤에 붙는 텍스트
+    //           ,monthNamesShort: ['1','2','3','4','5','6','7','8','9','10','11','12'] //달력의 월 부분 텍스트
+    //           ,monthNames: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','12월'] //달력의 월 부분 Tooltip 텍스트
+    //           ,dayNamesMin: ['일','월','화','수','목','금','토'] //달력의 요일 부분 텍스트
+    //           ,dayNames: ['일요일','월요일','화요일','수요일','목요일','금요일','토요일'] //달력의 요일 부분 Tooltip 텍스트
+    //       });
+    //       $( ".datepick input" ).datepicker();
+    //   });
+  
+     
+      </script>
 </body>
 
 </html>
