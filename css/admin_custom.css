@@ -256,13 +256,59 @@ body.login_body {
     z-index: 2;
 }
 
+hr{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+/* 데이트 피커 */
+.table.search_day .datepick .form-control{
+    display: inline-block;
+}
+/* 인덱스 게시판 기간조회 테이블 */
+.table.search_day th,
+.table.search_day td{
+    border: none;
+}
+.table.search_day td{
+    text-align: center;
+}
+
 /* 우편번호 modal */
+<<<<<<< HEAD
 .postmodal_wrap .postmodal_result ul {
     list-style: none;
     padding-left: 0px;
 }
 
 .postmodal_wrap .postmodal_result input[type="radio"] {
+=======
+.postmodal_content .postmodal_header, 
+.postmodal_content .postmodal_wrap .postmodal_search,
+.postmodal_content .postmodal_wrap .postmodal_info{
+    padding: 20px;
+}
+.postmodal_wrap .postmodal_txt{
+    padding: 20px 20px 0 20px;
+}
+.postmodal_wrap .postmodal_txt strong{
+    float: left;
+    font-size: 16px;
+}
+.postmodal_wrap .postmodal_txt span{
+    float: right;
+}
+.postmodal_body{
+    clear: both;
+}
+.postmodal_content .postmodal_wrap .postmodal_body{
+    height: 350px;
+}
+.postmodal_wrap .postmodal_body ul{
+    list-style: none;
+    padding-left: 0px;
+}
+.postmodal_wrap .postmodal_body input[type="radio"] {
+>>>>>>> 5c9685ebd24379a174be7a717a273a5888e30947
     overflow: hidden;
     border: 0;
     position: absolute;
@@ -271,6 +317,7 @@ body.login_body {
     clip: rect(1px, 1px, 1px, 1px);
     clip-path: inset(50%);
 }
+<<<<<<< HEAD
 
 .postmodal_wrap .postmodal_result li input.form-check-input:checked+label {
     background: #f7f7f7;
@@ -278,10 +325,14 @@ body.login_body {
 }
 
 .postmodal_wrap .postmodal_result li label {
+=======
+.postmodal_wrap .postmodal_body li label{
+>>>>>>> 5c9685ebd24379a174be7a717a273a5888e30947
     display: block;
     padding: 10px;
     font-size: 15px;
 }
+<<<<<<< HEAD
 
 .postmodal_content .postmodal_header,
 .postmodal_content .postmodal_wrap .postmodal_search,
@@ -298,13 +349,31 @@ body.login_body {
 }
 
 .postmodal_wrap .postmodal_body .border {
+=======
+.postmodal_wrap .postmodal_body li input.form-check-input:checked+label{
+    background: #f7f7f7;
+    border: 1px solid #007bff;
+}
+.postmodal_wrap .postmodal_body li input.form-check-input.selected + label{
+    background: #ffffff;
+    border: 1px solid #ffffff;
+}
+.postmodal_wrap .postmodal_body .form-check-label .new_addr{
+    padding-bottom: 7px;
+}
+.postmodal_wrap .postmodal_body .form-check-label .border{
+>>>>>>> 5c9685ebd24379a174be7a717a273a5888e30947
     display: inline-block;
     line-height: 38px;
     width: 70px;
     text-align: center;
 }
+<<<<<<< HEAD
 
 .postmodal_wrap .postmodal_body .addr_txt {
+=======
+.postmodal_wrap .postmodal_body .form-check-label .addr_txt{
+>>>>>>> 5c9685ebd24379a174be7a717a273a5888e30947
     display: inline-block;
     margin-left: 20px;
 }
@@ -314,6 +383,7 @@ body.login_body {
     margin-top: 15px;
 }
 
+<<<<<<< HEAD
 .postmodal_wrap .postmodal_txt {
     padding: 20px 20px 0 20px;
 }
@@ -332,6 +402,9 @@ body.login_body {
 }
 
 .postmodal_content .postmodal_wrap .postmodal_info div {
+=======
+.postmodal_content .postmodal_wrap .postmodal_info div{
+>>>>>>> 5c9685ebd24379a174be7a717a273a5888e30947
     margin-top: 16px;
 }
 
